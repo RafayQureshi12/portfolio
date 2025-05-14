@@ -13,6 +13,7 @@ import {
   Star,
   Briefcase,
 } from "lucide-react"
+import ContactForm from "@/components/contact-form"
 import CVbutton from '@/components/CVbutton';
 import { useState } from "react"
 import Link from "next/link"
@@ -237,11 +238,11 @@ export default function Portfolio() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="relative py-32 z-10">
-        <div className="container mt-[50px] ">
-          <div className=" bg-[#1E1E2E]/80 backdrop-blur-xl border border-[#6E6C7E]/30 rounded-3xl shadow-2xl overflow-hidden">
-            <div className="grid grid-rows-3 px-[20px] lg:grid-cols-2">
-              <div className=" lg:p-16 bg-gradient-to-br from-[#F28FAD]/20 to-[#CBA6F7]/20">
+      <section id="contact" className="relative py-[32px] ">
+        <div className="mt-[50px] ">
+          <div className="bg-[#1E1E2E]/80 backdrop-blur-xl border border-[#6E6C7E]/30 rounded-3xl shadow-2xl overflow-hidden">
+            <div className=" grid grid-rows-3 px-[20px] lg:grid-cols-2">
+              <div className="p-[12px] rounded-t-[30px] lg:p-16 bg-gradient-to-br from-[#F28FAD]/20 to-[#CBA6F7]/20">
                 <div className="inline-flex items-center mt-[4px] p-[4px] rounded-full bg-[#1E1E2E]/80 border border-[#6E6C7E]/30 shadow-inner backdrop-blur-sm mb-6">
                   <span className="text-sm font-medium text-[#F28FAD]">Get In Touch</span>
                 </div>
@@ -290,53 +291,9 @@ export default function Portfolio() {
 </div>
               </div>
 
-              <div className="p-[10px] lg:p-[16px]">
-                <h3 className="text-2xl font-bold text-[#F5E0DC] mb-[8px]">Send Me a Message</h3>
-                <form className="space-y-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-[#C3BAC6] p-[4px] mb-[4px]">
-                      Your Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      className="w-[200px] p-[4px] mb-[4px] rounded- bg-[#1E1E2E] border border-[#6E6C7E]/30 focus:border-[#F28FAD] focus:outline-none focus:ring-1 focus:ring-[#F28FAD] text-[#F5E0DC]"
-                      placeholder="John Doe"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-[#C3BAC6] mb-[4px] p-[4px]">
-                      Your Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      className="w-[250px] p-[4px] mb-[4px] rounded-lg bg-[#1E1E2E] border border-[#6E6C7E]/30 focus:border-[#F28FAD] focus:outline-none focus:ring-1 focus:ring-[#F28FAD] text-[#F5E0DC]"
-                      placeholder="John@example.com"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-[#C3BAC6] mb-[4px] p-[4px]">
-                      Your Message
-                    </label>
-                    <textarea
-                      id="message"
-                      rows={5}
-                      className="w-[600px] p-[4px] rounded-lg bg-[#1E1E2E] border border-[#6E6C7E]/30 focus:border-[#F28FAD] focus:outline-none focus:ring-1 focus:ring-[#F28FAD] text-[#F5E0DC]"
-                      placeholder="Hello, I'd like to talk about..."
-                    ></textarea>
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="p-[6px] mt-[4px] rounded-full bg-gradient-to-r from-[#F28FAD] to-[#CBA6F7] hover:from-[#CBA6F7] hover:to-[#F28FAD] text-[#1E1E2E] font-medium transition-all duration-300 transform hover:scale-[1.02] shadow-lg shadow-[#F28FAD]/20"
-                  >
-                    Send Message
-                  </button>
-                </form>
-              </div>
+          <div className="max-w-3xl bg-[#302D41] rounded-b-[22px]  shadow-[12px]">
+            <ContactForm />
+          </div>
             </div>
           </div>
         </div>
