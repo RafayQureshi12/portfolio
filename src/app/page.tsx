@@ -382,7 +382,12 @@ function NavLink({ href, label }) {
   )
 }
 
-function SocialLink({ href, icon }) {
+type SocialLinkProps = {
+  href: string;
+  icon: React.ReactNode;
+};
+
+function SocialLink({ href, icon }: SocialLinkProps) {
   return (
     <Link
       href={href}
