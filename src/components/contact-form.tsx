@@ -77,8 +77,8 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="p-[10px] lg:p-[16px]">
-      <h3 className="text-[20px]   text-[#F5E0DC] mb-[8px]">Send Me a Message</h3>
+    <div className="p-[20px] lg:p-[16px]">
+      <h3 className="text-[20px] mt-[20px]  text-[#F5E0DC] mb-[8px]">Send Me a Message</h3>
 
       {status.info.error && (
         <div className="mb-4 p-3 bg-red-500/20 border border-red-500/50 rounded-lg text-[#F5E0DC]">
