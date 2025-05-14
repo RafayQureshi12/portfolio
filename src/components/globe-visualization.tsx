@@ -76,6 +76,7 @@ export default function GlobeVisualization() {
 
     // Draw function
     function draw() {
+      if (!ctx || !canvas) return
       // Clear canvas
       ctx.clearRect(0, 0, canvas.width, canvas.height)
 

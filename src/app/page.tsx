@@ -373,7 +373,12 @@ export default function Portfolio() {
   )
 }
 
-function NavLink({ href, label }) {
+type NavLinkProps = {
+  href: string;
+  label: string;
+};
+
+function NavLink({ href, label }: NavLinkProps) {
   return (
     <Link href={href} className="text-[#C3BAC6] hover:text-[#F5E0DC] font-medium transition-colors relative group">
       {label}
@@ -399,7 +404,14 @@ function SocialLink({ href, icon }: SocialLinkProps) {
   )
 }
 
-function ServiceCard({ icon, title, description, color }) {
+type ServiceCardProps = {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  color: string;
+};
+
+function ServiceCard({ icon, title, description, color }: ServiceCardProps) {
   return (
     <div className="group relative bg-[#1E1E2E]/80 backdrop-blur-xl border border-[#6E6C7E]/30 rounded-2xl p-8 hover:border-[#F28FAD]/50 transition-all duration-500 transform hover:scale-[1.03] hover:shadow-xl overflow-hidden">
       <div
@@ -427,7 +439,15 @@ function ServiceCard({ icon, title, description, color }) {
   )
 }
 
-function ProjectCard({ title, description, tags, gradient, projectLink }) {
+type ProjectCardProps = {
+  title: string;
+  description: string;
+  tags: string[];
+  gradient: string;
+  projectLink: string;
+};
+
+function ProjectCard({ title, description, tags, gradient, projectLink }: ProjectCardProps) {
   return (
     <div className="group relative bg-[#1E1E2E]/80 backdrop-blur-xl border border-[#6E6C7E]/30 rounded-2xl overflow-hidden transition-all duration-500 transform hover:scale-[1.02] hover:shadow-xl">
       <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${gradient}`}></div>
