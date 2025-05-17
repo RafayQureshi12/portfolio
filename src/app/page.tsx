@@ -90,8 +90,9 @@ export default function Portfolio() {
             </div>
 
             <div className="relative mx-auto lg:mx-0">
-              <div className="relative z-10 w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] lg:w-[450px] lg:h-[450px] mx-auto overflow-hidden rounded-full border-4 border-[#F28FAD] shadow-2xl shadow-[#F28FAD]/20 transform hover:scale-[1.02] transition-all duration-500">
-              <div className="absolute inset-0 bg-gradient-to-b from-[#F28FAD]/20 to-[#CBA6F7]/20 mix-blend-overlay"></div><GlobeVisualization />
+              <div className="relative z-10 w-[400px] h-[400px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] lg:w-[450px] lg:h-[450px] mx-auto overflow-hidden rounded-full border-4 border-[#F28FAD] shadow-2xl shadow-[#F28FAD]/20 transform hover:scale-[1.02] transition-all duration-500">
+              <div className="absolute inset-0 bg-gradient-to-b from-[#F28FAD]/20 to-[#CBA6F7]/20 mix-blend-overlay"></div>
+              <GlobeVisualization />
             </div>
 
               {/* Decorative elements */}
@@ -330,7 +331,7 @@ export default function Portfolio() {
   )
 }
 
-type NavLinkProps = {
+type NavLinkProps = { 
   href: string;
   label: string;
 };
