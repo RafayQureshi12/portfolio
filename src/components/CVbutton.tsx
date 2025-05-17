@@ -9,7 +9,7 @@ const CVButton: FC = () => {
         setIsDownloading(true);
         
         // This path will work on Vercel
-        const cvFilePath = "@/asssets/CV.pdf";
+        const cvFilePath = "@/static/Rafay_Qureshi_CV.pdf";
         
         // Create a link element
         const link = document.createElement('a');

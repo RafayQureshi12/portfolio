@@ -14,8 +14,6 @@ import {
   Briefcase,
 } from "lucide-react"
 import ContactForm from "@/components/contact-form"
-import CVbutton from '@/components/CVbutton';
-import { useState } from "react"
 import Link from "next/link"
 import GlobeVisualization from "@/components/globe-visualization"
 
@@ -74,7 +72,10 @@ export default function Portfolio() {
                 <Link href="#projects" className="p-[4px] rounded-full bg-gradient-to-r from-[#F28FAD] to-[#CBA6F7] hover:from-[#CBA6F7] hover:to-[#F28FAD] text-[#1E1E2E] font-medium flex items-center transition-all duration-300 transform hover:scale-105 shadow-lg shadow-[#F28FAD]/20">
                    View Projects <ChevronRight className="ml-[2px] p-[4px] h-5 w-5" />
                 </Link>
-                <CVbutton />
+<Link href="/CV.pdf" className="p-[4px] rounded-full bg-gradient-to-r from-[#F28FAD] to-[#CBA6F7] hover:from-[#CBA6F7] hover:to-[#F28FAD] text-[#1E1E2E] font-medium flex items-center transition-all duration-300 transform hover:scale-105 shadow-lg shadow-[#F28FAD]/20">
+  Download CV
+</Link>
+                
               </div>
 
               <div className="flex space-x-5 mt-[10px] gap-[5px] p-[4px]">
@@ -89,10 +90,9 @@ export default function Portfolio() {
             </div>
 
             <div className="relative mx-auto lg:mx-0">
-              <div className="relative z-10 h-[450px] w-[450px] mx-auto overflow-hidden rounded-full border-4 border-[#F28FAD] shadow-2xl shadow-[#F28FAD]/20 transform hover:scale-[1.02] transition-all duration-500">
-                <div className="absolute inset-0 bg-gradient-to-b from-[#F28FAD]/20 to-[#CBA6F7]/20 mix-blend-overlay"></div>
-                <GlobeVisualization />
-              </div>
+              <div className="relative z-10 w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] lg:w-[450px] lg:h-[450px] mx-auto overflow-hidden rounded-full border-4 border-[#F28FAD] shadow-2xl shadow-[#F28FAD]/20 transform hover:scale-[1.02] transition-all duration-500">
+              <div className="absolute inset-0 bg-gradient-to-b from-[#F28FAD]/20 to-[#CBA6F7]/20 mix-blend-overlay"></div><GlobeVisualization />
+            </div>
 
               {/* Decorative elements */}
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] border-2 border-dashed border-[#F28FAD]/30 rounded-full animate-[spin_20s_linear_infinite]"></div>
